@@ -1,27 +1,32 @@
 body {
-  margin: 0;
+  background: linear-gradient(to bottom, #0a1f3d, #1e3a5f); /* mörkblå ton */
+  color: #fefefe; /* vit text */
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff8f0;
-  color: #333;
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-icecream') center/cover no-repeat;
-  color: white;
-  text-align: center;
+  background: linear-gradient(to bottom, rgba(10, 31, 61, 0.9), rgba(30, 58, 95, 0.9)),
+              url('everest.jpg') center/cover no-repeat;
   padding: 100px 20px;
-  background-color: #ff69b4;
+  text-align: center;
+  color: #fefefe;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
   font-size: 3em;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px #000;
+  color: #ffcc66; /* solfärg */
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 nav a {
@@ -82,10 +87,28 @@ footer {
   background-color: #eee;
 
 } 
-logotyp {
-  position: absolute;
+ logotyp {
+  position: fixed;
   top: 20px;
   left: 20px;
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #ff69b4;
+  width: 20px;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.snowflake {
+  position: absolute;
+  top: -50px;
+  font-size: 1.5em;
+  color: white;
+  animation: fall 8s linear infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes fall {
+  0% { top: -50px; opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
