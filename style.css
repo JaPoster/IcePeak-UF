@@ -31,26 +31,29 @@ body {
 
 nav a {
   margin: 0 10px;
-  background-color: #fff;
-  color: #ff69b4;
+  background-color: #ffcc66; /* solfärg */
+  color: #0a1f3d; /* mörkblå text */
   padding: 10px 15px;
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #ffb6c1;
+  background-color: #ffd580; /* ljusare solfärg vid hover */
 }
 
 .section {
+  background-color: #0a1f3d; /* mörkblå */
+  color: #fefefe;
   padding: 60px 20px;
-  text-align: center;
-  background-color: #fefefe;
 }
 
 .section.alt {
-  background-color: #ffe4e1;
+  background-color: #e0f2ff; /* kall ljusblå */
+  color: #0a1f3d;
+  padding: 60px 20px;
 }
 
 form {
@@ -113,4 +116,5 @@ footer {
   0% { top: -50px; opacity: 1; }
   100% { top: 100%; opacity: 0; }
 }
+
 
