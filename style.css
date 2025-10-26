@@ -3,13 +3,12 @@ body {
   color: #fefefe; /* vit text */
   font-family: 'Segoe UI', sans-serif;
 }
-
 .hero {
-  background: linear-gradient(to bottom, rgba(10, 31, 61, 0.9), rgba(30, 58, 95, 0.9)),
-              url('everest.jpg') center/cover no-repeat;
-  padding: 100px 20px;
+  background: linear-gradient(to bottom, rgba(10, 31, 61, 0.8), rgba(30, 58, 95, 0.8)),
+              url('BCO.a603fa5d-d5c6-45d1-813b-cc5129615e82.png') center/cover no-repeat;
+  color: white;
   text-align: center;
-  color: #fefefe;
+  padding: 100px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -100,7 +99,6 @@ footer {
   border-radius: 50%;
   z-index: 1000;
 }
-}
 
 .snowflake {
   position: absolute;
@@ -117,15 +115,7 @@ footer {
   100% { top: 100%; opacity: 0; }
 }
 
-.hero {
-  background: linear-gradient(to bottom, rgba(10, 31, 61, 0.8), rgba(30, 58, 95, 0.8)),
-              url('mountains.png') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  position: relative;
-  overflow: hidden;
-}
+
 
 
 
